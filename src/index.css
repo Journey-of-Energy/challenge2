@@ -19,3 +19,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #253347;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+
+form {
+  width: 100%;
+  height: 100%;
+}

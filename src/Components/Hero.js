@@ -14,7 +14,7 @@ function Hero() {
           height: "45rem",
           position: "absolute",
           top: "0",
-          left: "24px",
+          left: { lg: "24px", md: "0" },
           zIndex: "-20",
           borderRadius: "0px 0px 32px 32px",
           backgroundImage:
@@ -44,8 +44,6 @@ function Hero() {
           width: { lg: "80vw", md: "90vw", xs: "100vw" },
           height: "100%",
           display: "flex",
-
-          position: "relative",
         }}
       >
         <Box
@@ -65,9 +63,9 @@ function Hero() {
               alignSelf: "center",
               height: "17rem",
               justifyContent: { md: "space-between", xs: "space-around" },
-              mr: "2rem",
+              mr: { md: "2rem", sm: "" },
               textAlign: { md: "left", xs: "center" },
-              mb: { md: "0", xs: "2rem" },
+              mb: { md: "0", sm: "2rem", xs: "4rem" },
             }}
           >
             <Typography
@@ -78,12 +76,12 @@ function Hero() {
                 fontFamily: "Inter",
                 fontWeight: "600",
                 lineHeight: "110%",
-                px: { md: "8px", xs: "26%" },
+                px: { md: "8px", sm: "26%", xs: "23%" },
               }}
             >
               Body Mass Index Calculator
             </Typography>
-            <Typography>
+            <Typography sx={{ px: { md: "0", xs: "24px" } }}>
               Better understand your weight in relation to your height using our
               body mass index (BM) calculator. While BMI is not the sole
               determinant of a healthy weight, it offers a valuable starting
@@ -92,7 +90,11 @@ function Hero() {
           </Box>
 
           <Box
-            sx={{ boxShadow: "16px 32px 56px 0px rgba(143, 174, 207, 0.25)" }}
+            sx={{
+              boxShadow: "16px 32px 56px 0px rgba(143, 174, 207, 0.25)",
+              width: { lg: "564px", md: "482px", sm: "686px", xs: "100%" },
+              px: { md: "0", xs: "24px" },
+            }}
           >
             <Calculator />
           </Box>
