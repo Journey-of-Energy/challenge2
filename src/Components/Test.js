@@ -6,10 +6,20 @@ function Test() {
     <Box
       sx={{
         bgcolor: "tomato",
-        width: { lg: "80vw", md: "90vw", xs: "100vw" },
+        width: "100vw",
         height: "20rem",
+        overflow: "hidden",
+        px: { lg: "24rem", md: "4rem", xs: "1rem" },
       }}
-    ></Box>
+    >
+      <Box
+        sx={{
+          bgcolor: "yellow",
+          height: "2rem",
+          width: "100%",
+        }}
+      ></Box>
+    </Box>
   );
 }
 
