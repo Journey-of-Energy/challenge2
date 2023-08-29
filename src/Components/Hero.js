@@ -13,10 +13,13 @@ function Hero() {
         sx={{
           pb: { lg: "10%", xs: "20%" },
           overflowX: "hidden",
-          mb: { lg: "4rem", sm: "-8rem" },
+          overflowY: "hidden",
+          mb: { lg: "0rem", sm: "-12rem" },
           width: "100vw",
           //bgcolor: "tomato",
           maxHeight: { lg: "50rem", md: "", sm: "", xs: "" },
+          scrollBehavior: "none",
+          //bgcolor: "green",
         }}
       >
         <Box
@@ -38,6 +41,7 @@ function Hero() {
             display: "flex",
             flexDirection: "column",
             zIndex: "20",
+            //bgcolor: "tomato",
           }}
         >
           <Box
@@ -45,6 +49,7 @@ function Hero() {
               width: "100%",
               display: "flex",
               justifyContent: { md: "flex-start", xs: "center" },
+              //bgcolor: "yellow",
             }}
           >
             <Box
@@ -65,6 +70,7 @@ function Hero() {
               width: "100%",
               height: "100%",
               display: "flex",
+              //bgcolor: "blue",
             }}
           >
             <Box
@@ -85,11 +91,16 @@ function Hero() {
                     flexDirection: "column",
                     alignSelf: "center",
                     height: "100%",
-                    justifyContent: { md: "space-between", xs: "space-around" },
+                    justifyContent: {
+                      md: "space-between",
+                      sm: "center",
+                      xs: "center",
+                    },
                     mr: { md: "2rem", sm: "" },
                     textAlign: { md: "left", xs: "center" },
                     mb: { md: "0", sm: "2rem", xs: "4rem" },
                     mt: "4rem",
+
                     //bgcolor: "tomato",
                   }}
                 >
@@ -105,12 +116,13 @@ function Hero() {
                       fontFamily: "Inter",
                       fontWeight: "600",
                       lineHeight: "110%",
+                      mb: { lg: "0", md: "0", sm: "1rem", xs: "1.6rem" },
                       //px: { md: "8px", sm: "26%", xs: "23%" },
                     }}
                   >
                     Body Mass Index Calculator
                   </Typography>
-                  <Typography sx={{}}>
+                  <Typography sx={{ mb: { sm: "1.5rem", xs: "0" } }}>
                     Better understand your weight in relation to your height
                     using our body mass index (BM) calculator. While BMI is not
                     the sole determinant of a healthy weight, it offers a

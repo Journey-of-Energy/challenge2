@@ -10,7 +10,7 @@ function BmiExplain() {
         //bgcolor: "tomato",
         width: "100vw",
         height: "100%",
-        //overflow: "hidden",
+        overflow: "hidden",
         px: { lg: "18rem", md: "4rem", sm: "3rem", xs: "1rem" },
         //bgcolor: "yellow",
         mb: "4rem",
@@ -18,8 +18,8 @@ function BmiExplain() {
     >
       <Box
         sx={{
-          //bgcolor: "yellow",
-          height: "auto",
+          //bgcolor: "tomato",
+          height: "100%",
           py: { lg: "4rem", sm: "8rem", xs: "0rem" },
           width: "100%",
           display: "flex",
@@ -32,26 +32,16 @@ function BmiExplain() {
       >
         <Box
           sx={{
-            position: "absolute",
-            top: "-80px",
-            right: "40px",
-            zIndex: "2000",
-            display: { lg: "block", md: "none", sm: "none", xs: "none" },
-          }}
-        >
-          <img src={Vector}></img>
-        </Box>
-        <Box
-          sx={{
             //bgcolor: "green",
-            width: { lg: "40%", sm: "150%", xs: "100vw" },
-            height: "388px",
+            width: { lg: "50%", sm: "150%", xs: "100vw" },
+            height: "100%",
             borderRadius: "32px",
             display: "flex",
             position: "relative",
             transform: { lg: "translateX(0)", sm: "translateX(-35%)" },
             alignSelf: { lg: "flex-end", md: "flex-start" },
             mb: { lg: "0", md: "0", sm: "0", xs: "4rem" },
+            //bgcolor: "green",
           }}
         >
           <img className="GuyImg" src={Guy} />
@@ -64,8 +54,20 @@ function BmiExplain() {
             width: { lg: "40%", sm: "100%" },
             alignSelf: "center",
             //bgcolor: "tomato",
+            position: "relative",
           }}
         >
+          <Box
+            sx={{
+              position: "absolute",
+              top: "-210px",
+              right: "40px",
+              zIndex: "2000",
+              display: { lg: "block", md: "none", sm: "none", xs: "none" },
+            }}
+          >
+            <img src={Vector}></img>
+          </Box>
           <Typography
             sx={{
               color: "#253347",

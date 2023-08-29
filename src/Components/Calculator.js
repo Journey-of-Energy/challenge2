@@ -16,8 +16,10 @@ function Calculator() {
   const [minLbsState, setMinLbsState] = useState("");
   const [maxStState, setMaxStState] = useState("");
   const [maxLbsState, setMaxLbsState] = useState("");
+  const [isSet, setIsSet] = useState(false);
   const handleHeightChange = (e) => {
     const newHeight = e.target.value;
+    setIsSet(true);
     if (newHeight >= 0 && newHeight <= 300) {
       setHeight(newHeight);
     }
@@ -36,6 +38,7 @@ function Calculator() {
   };
   const handleWeightChange = (e) => {
     const newWeight = e.target.value;
+    setIsSet(true);
     if (newWeight >= 0 && newWeight <= 300) {
       setWeight(newWeight);
     }
@@ -104,21 +107,25 @@ function Calculator() {
 
   const handleFtChange = (e) => {
     const newFtHeight = e.target.value;
+    setIsSet(true);
     setFtHeight(newFtHeight);
     calculateImpBmi();
   };
   const handleInchChange = (e) => {
     const newInchHeight = e.target.value;
+    setIsSet(true);
     setInchHeight(newInchHeight);
     calculateImpBmi();
   };
   const handleStChange = (e) => {
     const newStWeight = e.target.value;
+    setIsSet(true);
     setStWeight(newStWeight);
     calculateImpBmi();
   };
   const handleLbsChange = (e) => {
     const newLbsWeight = e.target.value;
+    setIsSet(true);
     setLbsWeight(newLbsWeight);
     calculateImpBmi();
   };
@@ -191,6 +198,7 @@ function Calculator() {
     inchHeight,
     convertedHeight,
     convertedWeight,
+    isSet,
   ]);
   return (
     <Box
@@ -563,7 +571,12 @@ function Calculator() {
           width: "100%",
           height: "100%",
           backgroundImage: "linear-gradient(90deg, #345FF6 0%, #587DFF 100%)",
-          borderRadius: { md: "16px 999px 999px 16px", xs: "16px" },
+          borderRadius: {
+            lg: "64px 999px 999px 64px",
+            md: "64px 999px 999px 64px",
+            sm: "64px 999px 999px 64px",
+            xs: "16px",
+          },
           display: "flex",
           flexDirection: { md: "row", xs: "column" },
           alignItems: "center",
@@ -588,7 +601,7 @@ function Calculator() {
               fontWeight: "600",
             }}
           >
-            Your BMI is...
+            {isSet ? "Your BMI is..." : ""}
           </Typography>
           <Typography
             variant="h1"
@@ -601,7 +614,7 @@ function Calculator() {
               fontWeight: "600",
             }}
           >
-            {bmi > 0 && bmi < 99 ? bmi : "0"}
+            {isSet ? (bmi > 0 && bmi < 99 ? bmi : "0") : "Welcome!"}
           </Typography>
         </Box>
         <Box sx={{ width: { md: "50%", xs: "100%" } }}>
