@@ -57,7 +57,7 @@ function CardRow() {
               alignItems: "center",
             }}
           >
-            <img src={HealthyIcon} />
+            <img src={HealthyIcon} alt="HealthyIcon" />
           </Box>
           <Box>
             <Typography
@@ -101,7 +101,7 @@ function CardRow() {
           }}
         >
           <Box sx={{ width: "64px", display: "flex", alignItems: "center" }}>
-            <img src={ExerciseIcon} />
+            <img src={ExerciseIcon} alt="ExerciseIcon" />
           </Box>
           <Box>
             <Typography
@@ -144,7 +144,7 @@ function CardRow() {
           }}
         >
           <Box sx={{ width: "64px", display: "flex", alignItems: "center" }}>
-            <img src={AdequateIcon} />
+            <img src={AdequateIcon} alt="AdequateIcon" />
           </Box>
           <Box>
             <Typography

@@ -44,7 +44,7 @@ function BmiExplain() {
             //bgcolor: "green",
           }}
         >
-          <img className="GuyImg" src={Guy} />
+          <img className="GuyImg" src={Guy} alt="GuyImg" />
         </Box>
         <Box
           sx={{
@@ -66,7 +66,7 @@ function BmiExplain() {
               display: { lg: "block", md: "none", sm: "none", xs: "none" },
             }}
           >
-            <img src={Vector}></img>
+            <img src={Vector} alt="vector"></img>
           </Box>
           <Typography
             sx={{

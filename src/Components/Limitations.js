@@ -136,7 +136,7 @@ function Limitations() {
               display: { lg: "block", md: "none", sm: "none", xs: "none" },
             }}
           >
-            <img src={Vector}></img>
+            <img src={Vector} alt="Vector"></img>
           </Box>
           <Box
             sx={{
@@ -163,7 +163,7 @@ function Limitations() {
                 mb: "1rem",
               }}
             >
-              <img src={GenderIcon}></img>
+              <img src={GenderIcon} alt="GenderIcon"></img>
               <Typography
                 sx={{
                   fontFamily: "Inter",
@@ -215,7 +215,7 @@ function Limitations() {
                 mb: "1rem",
               }}
             >
-              <img src={AgeIcon}></img>
+              <img src={AgeIcon} alt="AgeIcon"></img>
               <Typography
                 sx={{
                   fontFamily: "Inter",
@@ -266,7 +266,7 @@ function Limitations() {
                 mb: "1rem",
               }}
             >
-              <img src={MuscleIcon}></img>
+              <img src={MuscleIcon} alt="MuscleIcon"></img>
               <Typography
                 sx={{
                   fontFamily: "Inter",
@@ -317,7 +317,7 @@ function Limitations() {
                 mb: "1rem",
               }}
             >
-              <img src={PregnancyIcon}></img>
+              <img src={PregnancyIcon} alt="PregnancyIcon"></img>
               <Typography
                 sx={{
                   fontFamily: "Inter",
@@ -372,7 +372,7 @@ function Limitations() {
                 mb: "1rem",
               }}
             >
-              <img src={RaceIcon}></img>
+              <img src={RaceIcon} alt="RaceIcon"></img>
               <Typography
                 sx={{
                   fontFamily: "Inter",

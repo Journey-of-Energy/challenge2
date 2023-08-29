@@ -181,25 +181,28 @@ function Calculator() {
     }
   };
 
-  useEffect(() => {
-    calculateBmi();
-    messageSystem();
-    convertValues();
-    calculateImpBmi();
-  }, [
-    weight,
-    height,
-    bmi,
-    message,
-    isMetric,
-    lbsWeight,
-    stWeight,
-    ftHeight,
-    inchHeight,
-    convertedHeight,
-    convertedWeight,
-    isSet,
-  ]);
+  useEffect(
+    () => {
+      calculateBmi();
+      messageSystem();
+      convertValues();
+      calculateImpBmi();
+    }, //eslint-disable-next-line
+    [
+      weight,
+      height,
+      bmi,
+      message,
+      isMetric,
+      lbsWeight,
+      stWeight,
+      ftHeight,
+      inchHeight,
+      convertedHeight,
+      convertedWeight,
+      isSet,
+    ]
+  );
   return (
     <Box
       sx={{
