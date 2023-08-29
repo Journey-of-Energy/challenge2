@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@mui/joy/Box";
-import { Icon, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import GenderIcon from "../Sources/images/icon-gender.svg";
 import AgeIcon from "../Sources/images/icon-age.svg";
 import MuscleIcon from "../Sources/images/icon-muscle.svg";
@@ -31,7 +31,6 @@ function Limitations() {
       >
         <Box
           sx={{
-            display: "flex",
             flexDirection: "column",
             gap: "12px",
             display: { lg: "none", md: "block", sm: "block", xs: "block" },
